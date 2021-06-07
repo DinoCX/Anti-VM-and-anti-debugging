@@ -1,0 +1,19 @@
+MOV EAX, FS:[0x30];
+MOV EAX, [EAX + 0x18];
+MOV EAX, [EAX + 0x0c];
+cmp eax,0x2
+jne Main
+rdtsc
+xor ecx,ecx
+add ecx, eax
+rdtsc
+sub eax, ecx
+cmp eax, 0xFFF
+jb popup
+rdtsc
+push eax
+Main:
+mov    eax,0x4094e4
+call   eax
+popup:
+//shellcode: \x64\xA1\x30\x00\x00\x00\x8B\x40\x18\x8B\x40\x0C\x83\xF8\x02\x75\x14\x0F\x31\x31\xC9\x01\xC1\x0F\x31\x29\xC8\x3D\xFF\x0F\x00\x00\x72\x0A\x0F\x31\x50\xB8\xE4\x94\x40\x00\xFF\xD0
