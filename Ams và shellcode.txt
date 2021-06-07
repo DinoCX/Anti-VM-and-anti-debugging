@@ -17,3 +17,5 @@ mov    eax,0x4094e4
 call   eax
 popup:
 //shellcode: \x64\xA1\x30\x00\x00\x00\x8B\x40\x18\x8B\x40\x0C\x83\xF8\x02\x75\x14\x0F\x31\x31\xC9\x01\xC1\x0F\x31\x29\xC8\x3D\xFF\x0F\x00\x00\x72\x0A\x0F\x31\x50\xB8\xE4\x94\x40\x00\xFF\xD0
+Link tham khảo Timing check: sử dụng link bài giảng 06 về anti dynamic analysis
+Link tham khảo Heap flag: https://resources.infosecinstitute.com/topic/anti-debugging-and-anti-vm-techniques-and-anti-emulation/?fbclid=IwAR3WubicUDVFVrdQmCP5U2VftQ_F0SJ1mJxqSpt062UMpfZe7VUYsz0be3c
