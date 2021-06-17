@@ -11,7 +11,7 @@ mov    eax,0x4094e4
 call   eax
 popup:
 #shellcode:\x31\xC0\x40\x0F\xA2\x0F\xBA\xE1\x1F\x73\x15\x64\xA1\x30\x00\x00\x00\x80\x78\x02\x00\x75\x02\xEB\x07\xB8
-tài liệu tham khảo
+#tài liệu tham khảo
 https://anti-debug.checkpoint.com/techniques/debug-flags.html#manual-checks-peb-beingdebugged-flag
 https://rayanfam.com/topics/defeating-malware-anti-vm-techniques-cpuid-based-instructions/
 
